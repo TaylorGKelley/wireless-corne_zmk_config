@@ -23,9 +23,9 @@
             compatible = "zmk,behavior-tap-dance";
             label = "CPY_PST";
             #binding-cells = <0>;
-            bindings = <&kp LG(C)>, <&kp LG(V)>;
+            bindings = <&kp LC(C)>, <&kp LC(V)>;
 
-            tapping-term-ms = <125>;
+            tapping-term-ms = <300>;
         };
 
         hml: hml {
@@ -34,7 +34,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             quick-tap-ms = <0>;
             flavor = "balanced";
             hold-trigger-key-positions = <36 37 38 39 40 41 30 18 6 7 31 19 8 20 32 33 21 9 10 22 35 34 23 11>;
@@ -47,7 +47,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             quick-tap-ms = <0>;
             flavor = "balanced";
             hold-trigger-key-positions = <41 40 39 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
@@ -74,7 +74,7 @@
         };
 
         sleep {
-            bindings = <&kp LA(LG(C_SLEEP))>;
+            bindings = <&kp C_SLEEP>;
             key-positions = <24 35>;
         };
 
@@ -129,7 +129,7 @@
         right_num {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &kp PLUS       &mt LS(N7) N7              &mt LS(N8) N8              &mt LS(N9) N9              &kp MINUS            &kp ASTRK
-&trans  &trans  &trans  &trans  &trans  &trans    &kp ENTER      &mt LS(NUMBER_4) NUMBER_4  &mt LS(N5) N5              &mt LS(NUMBER_6) NUMBER_6  &kp BACKSPACE        &kp SLASH
+&trans  &trans  &trans  &trans  &trans  &trans    &kp ENTER      &mt LS(NUMBER_4) NUMBER_4  &mt LS(N5) N5              &mt LS(NUMBER_6) NUMBER_6  &kp BACKSLASH        &kp BACKSPACE
 &trans  &trans  &trans  &trans  &trans  &trans    &kp PERIOD     &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &mt LS(N0) NUMBER_0  &kp EQUAL
                         &trans  &trans  &trans    &mt LS(N0) N0  &kp LEFT_SHIFT             &kp SPACE
             >;
@@ -140,10 +140,10 @@
         Nav {
             label = "Nav";
             bindings = <
-&kp LS(LA(LC(LG(LEFT_BRACKET))))  &kp LS(LA(LC(LG(RIGHT_BRACKET))))  &none  &none           &none  &none    &kp LS(LBKT)                    &kp LS(RBKT)     &kp LPAR           &kp RPAR   &kp LBKT     &kp RBKT
-&none                             &none                              &none  &none           &none  &none    &mt LS(LC(LG(LEFT_ALT))) CARET  &kp LEFT         &kp DOWN           &kp UP     &kp RIGHT    &kp DOLLAR
-&none                             &none                              &none  &kp LEFT_SHIFT  &none  &none    &kp LA(LS(MINUS))               &kp LS(LC(TAB))  &kp PG_DN          &kp PG_UP  &kp LC(TAB)  &kp TILDE
-                                                                            &none           &none  &none    &mt LS(BACKSLASH) BACKSLASH     &kp RIGHT_ALT    &kp LG(LC(RIGHT))
+&kp LS(LA(LC(LG(LEFT_BRACKET))))  &kp LS(LA(LC(LG(RIGHT_BRACKET))))  &none         &none          &none           &none    &kp LS(LBKT)                 &kp LS(RBKT)     &kp LPAR           &kp RPAR   &kp LBKT     &kp RBKT
+&none                             &kp LCTRL                          &kp LEFT_ALT  &kp LEFT_META  &kp LEFT_SHIFT  &none    &kp HOME                     &kp LEFT         &kp DOWN           &kp UP     &kp RIGHT    &kp END
+&none                             &none                              &none         &none          &none           &none    &kp GRAVE                    &kp LS(LC(TAB))  &kp PG_DN          &kp PG_UP  &kp LC(TAB)  &kp TILDE
+                                                                                   &none          &none           &none    &mt LS(BACKSLASH) BACKSLASH  &trans           &kp LG(LC(RIGHT))
             >;
         };
 
