@@ -129,7 +129,7 @@
         right_num {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &kp PLUS       &mt LS(N7) N7              &mt LS(N8) N8              &mt LS(N9) N9              &kp MINUS            &kp ASTRK
-&trans  &trans  &trans  &trans  &trans  &trans    &kp ENTER      &mt LS(NUMBER_4) NUMBER_4  &mt LS(N5) N5              &mt LS(NUMBER_6) NUMBER_6  &kp BACKSLASH        &kp BACKSPACE
+&trans  &trans  &trans  &trans  &trans  &trans    &kp ENTER      &mt LS(NUMBER_4) NUMBER_4  &mt LS(N5) N5              &mt LS(NUMBER_6) NUMBER_6  &kp SLASH            &kp BACKSPACE
 &trans  &trans  &trans  &trans  &trans  &trans    &kp PERIOD     &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &mt LS(N0) NUMBER_0  &kp EQUAL
                         &trans  &trans  &trans    &mt LS(N0) N0  &kp LEFT_SHIFT             &kp SPACE
             >;
@@ -140,10 +140,10 @@
         Nav {
             label = "Nav";
             bindings = <
-&kp LS(LA(LC(LG(LEFT_BRACKET))))  &kp LS(LA(LC(LG(RIGHT_BRACKET))))  &none         &none          &none           &none    &kp LS(LBKT)                 &kp LS(RBKT)     &kp LPAR           &kp RPAR   &kp LBKT     &kp RBKT
-&none                             &kp LCTRL                          &kp LEFT_ALT  &kp LEFT_META  &kp LEFT_SHIFT  &none    &kp HOME                     &kp LEFT         &kp DOWN           &kp UP     &kp RIGHT    &kp END
-&none                             &none                              &none         &none          &none           &none    &kp GRAVE                    &kp LS(LC(TAB))  &kp PG_DN          &kp PG_UP  &kp LC(TAB)  &kp TILDE
-                                                                                   &none          &none           &none    &mt LS(BACKSLASH) BACKSLASH  &trans           &kp LG(LC(RIGHT))
+&none  &none      &none         &none          &none           &none    &kp LS(LBKT)        &kp LS(RBKT)     &kp LPAR   &kp RPAR   &kp LBKT     &kp RBKT
+&none  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_META  &kp LEFT_SHIFT  &none    &kp HOME            &kp LEFT         &kp DOWN   &kp UP     &kp RIGHT    &kp END
+&none  &none      &none         &none          &none           &none    &mt PIPE BACKSLASH  &kp LS(LC(TAB))  &kp PG_DN  &kp PG_UP  &kp LC(TAB)  &mt GRAVE TILDE
+                                &none          &none           &none    &trans              &trans           &none
             >;
         };
 
