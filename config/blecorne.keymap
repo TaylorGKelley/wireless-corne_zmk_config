@@ -84,7 +84,7 @@
         };
 
         lock {
-            bindings = <&kp K_COFFEE>;
+            bindings = <&kp C_AL_LOCK>;
             key-positions = <0 11>;
         };
     };
